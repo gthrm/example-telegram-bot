@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "telegraf": "^3.32.0"
+  },
+  "name": "botisbot",
+  "version": "1.0.0",
+  "description": "Bot to telegram",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gthrm/example-telegram-bot.git"
+  },
+  "keywords": [
+    "node",
+    "telegram",
+    "js"
+  ],
+  "author": "cdROma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gthrm/example-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/gthrm/example-telegram-bot#readme"
+}
