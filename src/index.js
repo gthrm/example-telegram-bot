@@ -7,7 +7,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 const moment = require('moment');
 moment.locale('ru');
 
-bot.start((ctx) => ctx.reply(`Привет! ${getTime()}`))
+bot.start((ctx) => ctx.reply(`Привет, ${ctx.from.first_name}! ${getTime()}`))
 bot.help((ctx) => ctx.reply('Отправь мне стикер'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 bot.on('text', (ctx) => {
