@@ -12,16 +12,15 @@ export function answer(ctx, text) {
 
         case key.match(/дай.*(?=фот)|фот.*(?=дай)/igm) ? key : true:
             ctx.replyWithPhoto({ url: `https://placekitten.com/g/400/${randomInteger(300, 700)}` })
-            // ctx.replyWithAnimation(AnimationUrl1)
+        // ctx.replyWithAnimation(AnimationUrl1)
+        case key.match(/как.*(?=дела)/igm) ? key : true:
             return ctx.replyWithMediaGroup(
                 {
                     media: { url: `https://cs.pikabu.ru/images/big_size_comm/2012-11_4/13532556077583.gif` },
                     caption: 'Рандомный кот',
-                    type: 'animation'
+                    type: 'photo'
                 }
             )
-        case key.match(/как.*(?=дела)/igm) ? key : true:
-                return 'Держи'
         case key.match(/хуй/gi) ? key : true:
         case key.match(/пидор/gi) ? key : true:
             return `${ctx.from.first_name}, Ты пидор! Иди на хуй!`
