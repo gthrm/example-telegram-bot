@@ -1,4 +1,4 @@
-import { randomInteger } from '../src/actions';
+import { randomInteger } from './actions';
 
 export function answer(ctx, text) {
     const key = text.toLowerCase()

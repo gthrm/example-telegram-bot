@@ -1,6 +1,6 @@
-import { getTime } from './src/actions';
-import { answer } from './src/answers';
-import './src/utils';
+import { getTime } from './actions';
+import { answer } from './answers';
+import './utils';
 
 const Telegraf = require('telegraf');
 const bot = new Telegraf(process.env.BOT_TOKEN);
