@@ -14,13 +14,7 @@ export function answer(ctx, text) {
             ctx.replyWithPhoto({ url: `https://placekitten.com/g/400/${randomInteger(300, 700)}` })
         // ctx.replyWithAnimation(AnimationUrl1)
         case key.match(/как.*(?=дела)/igm) ? key : true:
-            ctx.replyWithMediaGroup(
-                {
-                    media: { url: `https://cs.pikabu.ru/images/big_size_comm/2012-11_4/13532556077583.gif` },
-                    caption: 'Рандомный кот',
-                    type: 'photo'
-                }
-            )
+            ctx.replyWithAnimation(`https://cs.pikabu.ru/images/big_size_comm/2012-11_4/13532556077583.gif`)
             return "Огонь";
         case key.match(/хуй/gi) ? key : true:
         case key.match(/пидор/gi) ? key : true:
