@@ -1,4 +1,6 @@
 import { randomInteger } from './actions';
+const moment = require('moment');
+moment.locale('ru');
 
 export function answer(ctx, text) {
     const key = text.toLowerCase()
